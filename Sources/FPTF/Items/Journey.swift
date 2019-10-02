@@ -60,8 +60,8 @@ public struct Journey: Item {
     }
 
     public struct Price: Codable, Equatable {
-        public var amount: Double
-        public var currency: String
+        public var amount: Double?
+        public var currency: String?
 
         public init(amount: Double, currency: String) {
             self.amount = amount
