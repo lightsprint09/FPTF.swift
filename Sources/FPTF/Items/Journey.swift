@@ -25,9 +25,9 @@ public struct Journey: Item {
         public var arrivalDelay: TimeInterval?
         public var arrivalPlatform: String
         public var schedule: Ref<Schedule>?
-        public var mode: Mode
-        public var `public`: Bool
-        public var `operator`: Ref<Operator>
+        public var mode: Mode?
+        public var `public`: Bool?
+        public var `operator`: Ref<Operator?
         public var stopovers: [Stopover]?
 
         public init(origin: RefThree<Station, Stop, Location>,
