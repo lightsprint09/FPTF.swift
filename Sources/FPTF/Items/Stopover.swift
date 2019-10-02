@@ -10,7 +10,7 @@ import Foundation
 public struct Stopover: Item {
     public let type: String = "stopover"
     
-    public var stop: Ref<Stop>
+    public var stop: RefTwo<Station, Stop>
     
     public var arrival: Date?
     public var arriavlDelay: TimeInterval?
@@ -20,7 +20,7 @@ public struct Stopover: Item {
     public var departureDelay: TimeInterval?
     public var departurePlatform: String?
     
-    public init(stop: Ref<Stop>, arrival: Date?, arriavlDelay: TimeInterval?, arrivalPlatform: String?, departure: Date?, departureDelay: TimeInterval?, departurePlatform: String?) {
+    public init(stop: RefTwo<Station, Stop>, arrival: Date?, arriavlDelay: TimeInterval?, arrivalPlatform: String?, departure: Date?, departureDelay: TimeInterval?, departurePlatform: String?) {
         self.stop = stop
         self.arrival = arrival
         self.arriavlDelay = arriavlDelay
