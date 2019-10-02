@@ -27,7 +27,7 @@ public struct Journey: Item {
         public var schedule: Ref<Schedule>?
         public var mode: Mode?
         public var `public`: Bool?
-        public var `operator`: Ref<Operator?
+        public var `operator`: Ref<Operator>?
         public var stopovers: [Stopover]?
 
         public init(origin: RefThree<Station, Stop, Location>,
