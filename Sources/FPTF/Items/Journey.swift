@@ -5,7 +5,7 @@ import Foundation
 public struct Journey: Item {
     public let type = "journey"
 
-    public var id: String
+    public var id: String?
     public var legs: [Leg]
     public var price: Price?
 
