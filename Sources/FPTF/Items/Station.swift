@@ -8,11 +8,27 @@ public struct Station: Item {
     public var name: String
     public var location: Location?
     public var regions: [Ref<Region>]?
+    
+    public var products: Products
 
-    public init(id: String, name: String, location: Location?, regions: [Ref<Region>]?) {
+    public init(id: String, name: String, location: Location?, regions: [Ref<Region>]?, products: Products) {
         self.id = id
         self.name = name
         self.location = location
         self.regions = regions
+        self.products = products
     }
+}
+
+public struct Products: Codable, Equatable {
+    public var nationalExpress: Bool
+    public var national: Bool
+    public var regionalExp: Bool
+    public var regional: Bool
+    public var suburban: Bool
+    public var bus: Bool
+    public var ferry: Bool
+    public var subway: Bool
+    public var tram: Bool
+    public var taxi: Bool
 }
