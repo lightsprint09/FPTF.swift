@@ -18,10 +18,10 @@ public struct Journey: Item {
     public struct Leg: Codable, Equatable {
         public var origin: RefThree<Station, Stop, Location>
         public var destination: RefThree<Station, Stop, Location>
-        public var departure: Date
+        public var departure: Date?
         public var departureDelay: TimeInterval?
         public var departurePlatform: String?
-        public var arrival: Date
+        public var arrival: Date?
         public var arrivalDelay: TimeInterval?
         public var arrivalPlatform: String?
         public var schedule: Ref<Schedule>?
