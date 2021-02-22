@@ -21,7 +21,7 @@ public struct Station: Item {
 }
 
 public struct Products: Codable, Equatable {
-    public var nationalExp: Bool
+    public var nationalExpress: Bool
     public var national: Bool
     public var regionalExp: Bool
     public var regional: Bool
